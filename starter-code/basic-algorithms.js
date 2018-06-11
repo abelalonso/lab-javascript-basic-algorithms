@@ -70,3 +70,16 @@ if (i===tamMenor.length){
   }
 }
 
+var parrafo="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+arrayParrafo=parrafo.split(" ");
+console.log("The length of the paragraph is "+arrayParrafo.length);
+
+contador=0;
+for (var i=0; i<arrayParrafo.length; i++){
+  if ((arrayParrafo[i].length===2)&&(arrayParrafo[i].toLowerCase().indexOf("et")!=-1)){
+    contador++;
+  }
+}
+
+console.log("et appears "+contador+" times");
