@@ -20,6 +20,16 @@ if (hacker1.length>hacker2.length){
   }
   
 
+
+var frase=prompt("Introduce a palindrome");
+var frase2=frase.toLowerCase().match(/[A-Za-z]/g);
+console.log(frase2.reverse().join(""));
+if(frase2.join("")===frase2.reverse().join("")) {
+  console.log("It's a palindrome");
+}else{
+  console.log("It's not a palindrome");
+}
+
 // Lorem ipsum generator
 
 var cadena="";
